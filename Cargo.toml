@@ -1,0 +1,15 @@
+[package]
+name = "istio-wasm-example"
+version = "0.1.0"
+authors = ["elvizlai <sdrzlyz@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+proxy-wasm = "0.1.0"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
